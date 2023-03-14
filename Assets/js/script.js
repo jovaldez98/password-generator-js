@@ -119,39 +119,50 @@ function passwordOptions(){
 }
 
 function generatePassword(){
-  var options = passswordOptions ()
+  var options = passwordOptions()
+  if (!options) {
+    return '';
+  }
   var output = [] 
   var possibleCharacters = []
   var guaranteedCharacters = []
   function random(array){
     var index = Math.floor(Math.random()* array.length)
-    var character = array[index]
+    var character = array[i] //
   }
   if (options.hasSpecial){
     possibleCharacters = possibleCharacters.concat(specialCharacters)
-    guaranteedCharacters.push(random(specialCharacters))
+    guaranteedCharacters.push(random(specialCharacters));
   }
   if (options.hasNumbers){
     possibleCharacters = possibleCharacters.concat(numericCharacters)
-    guaranteedCharacters.push(random(numericCharacters))
+    guaranteedCharacters.push(random(numericCharacters));
   }
   if (options.hasUpperCased){
     possibleCharacters = possibleCharacters.concat(upperCasedCharacters)
-    guaranteedCharacters.push(random(upperCasedCharacters))
+    guaranteedCharacters.push(random(upperCasedCharacters));
   }
   if (options.hasLowerCased){
     possibleCharacters = possibleCharacters.concat(lowerCasedCharacters)
-    guaranteedCharacters.push(random(lowerCasedCharacters))
+    guaranteedCharacters.push(random(lowerCasedCharacters));
   }
+
+  for (var index = 0; index < options.length; index++) {
+    console.log(Math.floor(Math.random() * possibleCharacters.length))
+    var randomChar = possibleCharacters[Math.floor(Math.random() * possibleCharacters.length)]
+    console.log(randomChar)
+    output.push(randomChar)
+  }
+
+  return output.join("")
 };
-// write two for loops
-// lastly a result.join to wrap everthing up
 
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword(); //?
+  var password = generatePassword(); 
+  console.log(password)
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
