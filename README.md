@@ -6,13 +6,13 @@ Modifying an existing code of a password generator on JavaScript.
 Added more functions, window alerts and window confirms to ensure the password generates. Modified password so user can choose any random character. It asks four questions regarding the password the user wants to generate using special characters, numeric characters, upper cased and lower cased characters.
 
 
-## Link
+## Link to Password Generator
 
 ![Alt text]()
 
 ## Credit
--Diarmuid Murphy (Instructor)
--Andrew Mason (Tutor)
+- Diarmuid Murphy (Instructor)
+- Andrew Mason (Tutor)
 
 
 # Resources

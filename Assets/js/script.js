@@ -128,7 +128,7 @@ function generatePassword(){
   var guaranteedCharacters = []
   function random(array){
     var index = Math.floor(Math.random()* array.length)
-    var character = array[index] //
+    var character = array[index] 
   }
   if (options.hasSpecial){
     possibleCharacters = possibleCharacters.concat(specialCharacters)
