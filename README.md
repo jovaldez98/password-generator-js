@@ -8,12 +8,13 @@ Added more functions, window alerts and window confirms to ensure the password g
 
 ## Link
 
+![Alt text]()
 
 ## Credit
-Diarmuid Murphy (Instructor)
-Andrew Mason (Tutor)
+-Diarmuid Murphy (Instructor)
+-Andrew Mason (Tutor)
 
 
 # Resources
-https://www.w3schools.com/jsref/jsref_push.asp
+- https://www.w3schools.com/jsref/jsref_push.asp
 
