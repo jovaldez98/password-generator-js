@@ -8,7 +8,7 @@ Added more functions, window alerts and window confirms to ensure the password g
 
 ## Link to Password Generator
 
-![Alt text](https://jovaldez98.github.io/password-generator-js/)
+- https://jovaldez98.github.io/password-generator-js/
 
 ## Credit
 - Diarmuid Murphy (Instructor)
